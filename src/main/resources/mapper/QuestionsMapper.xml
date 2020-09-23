@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adotcode.elasticsearch.repository.mapper.QuestionsMapper">
+    <resultMap id="BaseResultMap" type="com.adotcode.elasticsearch.repository.entity.Questions">
+        <!--@mbg.generated-->
+        <!--@Table questions-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="title" jdbcType="LONGVARCHAR" property="title"/>
+        <result column="option_a" jdbcType="LONGVARCHAR" property="optionA"/>
+        <result column="option_b" jdbcType="LONGVARCHAR" property="optionB"/>
+        <result column="option_c" jdbcType="LONGVARCHAR" property="optionC"/>
+        <result column="option_d" jdbcType="LONGVARCHAR" property="optionD"/>
+        <result column="option_e" jdbcType="LONGVARCHAR" property="optionE"/>
+        <result column="answer1" jdbcType="CHAR" property="answer1"/>
+        <result column="answer2" jdbcType="LONGVARCHAR" property="answer2"/>
+        <result column="parse" jdbcType="LONGVARCHAR" property="parse"/>
+        <result column="qtype" jdbcType="VARCHAR" property="qtype"/>
+        <result column="diff" jdbcType="TINYINT" property="diff"/>
+        <result column="md5" jdbcType="VARCHAR" property="md5"/>
+        <result column="subject_id" jdbcType="TINYINT" property="subjectId"/>
+        <result column="grade_id" jdbcType="INTEGER" property="gradeId"/>
+        <result column="knowledge" jdbcType="VARCHAR" property="knowledge"/>
+        <result column="area" jdbcType="VARCHAR" property="area"/>
+        <result column="year" jdbcType="INTEGER" property="year"/>
+        <result column="paper_type" jdbcType="VARCHAR" property="paperType"/>
+        <result column="source" jdbcType="VARCHAR" property="source"/>
+        <result column="from_site" jdbcType="VARCHAR" property="fromSite"/>
+        <result column="is_sub" jdbcType="BOOLEAN" property="isSub"/>
+        <result column="is_normal" jdbcType="BOOLEAN" property="isNormal"/>
+        <result column="is_know" jdbcType="BOOLEAN" property="isKnow"/>
+        <result column="ti_id" jdbcType="VARCHAR" property="tiId"/>
+        <result column="similarity" jdbcType="INTEGER" property="similarity"/>
+        <result column="is_unique" jdbcType="TINYINT" property="isUnique"/>
+        <result column="md52" jdbcType="VARCHAR" property="md52"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, title, option_a, option_b, option_c, option_d, option_e, answer1, answer2, parse,
+        qtype, diff, md5, subject_id, grade_id, knowledge, area, `year`, paper_type, `source`,
+        from_site, is_sub, is_normal, is_know, ti_id, similarity, is_unique, md52
+    </sql>
+</mapper>
